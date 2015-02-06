@@ -37,15 +37,17 @@ A starting point for MeteorJS applications. Includes iron-router, Bootstrap 3, F
 
 ## <a name="installation"></a> Installation
 
-1. Clone this repo to `<yourapp>`
+Install Meteor (Linux/Mac):
+  `curl https://install.meteor.com | /bin/sh`
 
-  `git clone https://github.com/Differential/meteor-boilerplate.git <yourapp>`
+Install Meteor (Windows):
+  `Download and run http://win-install.meteor.com/LaunchMeteor.exe`
 
-2. Remove `.git`
+1. Pull from repo and cd:
+  `cd app && meteor run`
 
-  `cd <yourapp> && rm -rf .git`
-
-3. Start coding!
+2. Go to:
+    `http://localhost:3000 and check that it works and then you're good to go`
 
 ## <a name="file-structure"></a> File Structure
 
