@@ -1,0 +1,16 @@
+<template name="domains">
+  <div class="template-domains">
+    <div class="page-header">
+      <h1>Domains</h1>
+    </div>
+
+    <ul class="list-group">
+      {{#each domains}}
+        {{#each topics}}
+            <li class="list-group-item">{{ description }} <span class="label label-default">{{ rating }}</span></li>
+        {{/each}}
+      {{/each}}
+    </ul>
+
+  </div>
+</template>

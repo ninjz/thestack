@@ -3,3 +3,4 @@ Router.route('/', {
 });
 
 Router.route('/dashboard');
+Router.route('/domains');
