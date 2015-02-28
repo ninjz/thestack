@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/board.css" />
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/jquery.timers.js"></script>
+	<script src="js/board.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script>
+
+		var gamestate = [0,0,0,0,0,0,0];
+
+		$(function(){
+			// $('body').everyTime(200,function(){
+			// 		if (status == 'waiting') {
+			// 			$.getJSON('<?= base_url() ?>arcade/checkInvitation',function(data, text, jqZHR){
+			// 					if (data && data.status=='rejected') {
+			// 						alert("Sorry, your invitation to play was declined!");
+			// 						window.location.href = '<?= base_url() ?>arcade/index';
+			// 					}
+			// 					if (data && data.status=='accepted') {
+			// 						status = 'playing';
+			// 						$('#status').html('Playing ' + otherUser);
+			// 					}
+			//
+			// 			});
+			// 		}
+			// 		// check if it is user's turn
+			// 		if (player != turn) {
+			// 			$('#play_status').text("Waiting on opponent...");
+			// 			$('.draggable').draggable('disable');
+			// 			$.getJSON('<?= base_url() ?>board/getMove',function(data, text, jqZHR){
+			// 					var other, lastMove, column, row, distance;
+			//
+			// 					if (data && data.status=="pending") {
+			// 					}
+			// 					if (data && data.status=="moved") {
+			// 						turn = data.nextPlyr;
+			// 						lastMove = data.lastMove;
+			// 						if (turn == player) {
+			// 							row = lastMove[0];
+			// 							column = lastMove[1];
+			// 							// alert(column);
+			// 							if (player == 'p1') {
+			// 								other = $(".p2_other_" + column).first();
+			// 							}
+			//
+			// 							else {
+			// 								other = $(".p1_other_" + column).first();
+			// 							}
+			// 							other.show();
+			//
+			// 							if (row == 5) {
+			// 								distance = distanceToRow5;
+			// 							} else if(row == 4){
+			// 								distance = distanceToRow4;
+			// 							} else if(row == 3){
+			// 								distance = distanceToRow3;
+			// 							} else if(row == 2){
+			// 								distance = distanceToRow2;
+			// 							} else if(row == 1){
+			// 								distance = distanceToRow1;
+			// 							} else if(row == 0){
+			// 								distance = distanceToRow0;
+			// 							}
+			//
+			// 							other.animate({
+			// 								top:distance
+			// 							}, 300, function(){
+			// 								if (data.win == 'true') {
+			// 									alert('YOU LOST');
+			// 									window.location.href = '<?= base_url() ?>arcade/index';
+			// 								} else if (data.tie == 'true') {
+			// 									alert('TIE');
+			// 									window.location.href = '<?= base_url() ?>arcade/index';
+			// 								}
+			// 							});
+			//
+			// 							other.appendTo(other.parent());
+			// 							if (row == 0) {
+			// 								$('#drop_row').find('#' + column).droppable({disabled:true});
+			// 							};
+			//
+			// 							gamestate = data.gamestate;
+			//
+			//
+			// 						};
+			// 					}
+			// 			});
+			// 		} else {
+			// 			$('#play_status').text("Make your move");
+			// 			$('.draggable').draggable('enable');
+			// 		}
+			//
+			// 		// listening for incoming msgs
+			// 		var url = "<?= base_url() ?>board/getMsg";
+			// 		$.getJSON(url, function (data,text,jqXHR){
+			// 			if (data && data.status=='success') {
+			// 				var conversation = $('[name=conversation]').val();
+			// 				var msg = data.message;
+			// 				if (msg.length > 0)
+			// 					$('[name=conversation]').val(conversation + "\n" + otherUser + ": " + msg);
+			// 			}
+			// 		});
+			// });
+
+			// $('form').submit(function(){
+			// 	var arguments = $(this).serialize();
+			// 	var url = "<?= base_url() ?>board/postMsg";
+			// 	$.post(url,arguments, function (data,textStatus,jqXHR){
+			// 			var conversation = $('[name=conversation]').val();
+			// 			var msg = $('[name=msg]').val();
+			// 			$('[name=conversation]').val(conversation + "\n" + user + ": " + msg);
+			// 			});
+			// 	return false;
+			// 	});
+		});
+
+	</script>
+
+
+
+	</head>
+<body>
+
+<div id="wrapper">
+		<div id="board_area"></div>
+
+		<div id="block_area"></div>
+
+</div>
+
+
+</body>
+
+</html>
