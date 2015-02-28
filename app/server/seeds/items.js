@@ -14,8 +14,8 @@ Meteor.startup(function() {
   }
 
   // Factory.define('domains', Domains, {
-  //     : function() {},
-  //
-  // })
+  //   algorithm: function() {return },
+  
+  //  });
 
 });

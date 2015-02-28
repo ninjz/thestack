@@ -1,16 +1,51 @@
 <template name="domains">
   <div class="template-domains">
+
     <div class="page-header">
       <h1>Domains</h1>
     </div>
 
-    <ul class="list-group">
-      {{#each domains}}
+    <link rel="stylesheet" type="text/css" href="domain.css" media="all"/>
+
+    <div id="domain">
+      <ul> 
+        <li><a href="#">Sorting</a></li> 
+          <ul> 
+            <li><a href="#">Level 1</a></li> 
+            <li><a href="#">Level 2</a></li> 
+            <li><a href="#">Level 3</a></li> 
+          </ul>
+
+        <li><a href="#">Data Structures</a></li> 
+          <ul> 
+            <li><a href="#">Level 1</a></li> 
+            <li><a href="#">Level 2</a></li> 
+            <li><a href="#">Level 3</a></li> 
+          </ul>
+
+        <li><a href="#">Dynamic Programing</a></li> 
+          <ul> 
+            <li><a href="#">Level 1</a></li> 
+            <li><a href="#">Level 2</a></li> 
+            <li><a href="#">Level 3</a></li> 
+          </ul> 
+
+        <li><a href="#">Search</a></li> 
+          <ul> 
+            <li><a href="#">Quickshort</a></li> 
+            <li><a href="#">Insertion Sort</a></li> 
+            <li><a href="#">Bubble Sort</a></li> 
+          </ul> 
+      </ul> 
+
+    </div>
+      <!-- {{#each domains}}
         {{#each topics}}
             <li class="list-group-item">{{ description }} <span class="label label-default">{{ rating }}</span></li>
         {{/each}}
-      {{/each}}
-    </ul>
+      {{/each}} -->
+
 
   </div>
 </template>
+
