@@ -1,0 +1,34 @@
+/******************** Psuedo Code **************************/
+
+
+Input: [2, 5, 7, 8, 10, 12]
+Output: [4, 25, 49, 100, 144]
+Type: PsudeoCode
+
+Code:
+
+Function1(list l):
+
+newlist := []
+for items in list l:
+~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~
+
+	tmp = FunctionSquare(items)
+
+	append tmp into newlist
+
+~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~
+	endif
+endfor
+return newlist;
+
+
+FunctionSquare(int x):
+
+
+~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~~~~
+
+ans = x * x
+
+~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~~~~
+return ans;

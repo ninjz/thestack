@@ -1,0 +1,42 @@
+/******************** Psuedo Code **************************/
+
+
+Input: [2, 3, 8, 9, 11, 12, 16]
+Output: ?
+Type: PsudeoCode
+
+Code:
+
+Function1(list l):
+
+a := 0
+
+for item in list l:
+
+
+	if item is divisible by 2 then
+
+		a += item
+
+	elseif item is divisible by 3 then
+
+		a -= item
+
+
+	end if	
+endfor
+s = a / 3
+
+for b in list l:
+	
+	s += b
+
+
+return s;
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~~~~~~~~
+
+Output = 66
+
+~~~~~~~~~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~~~~~~~~
