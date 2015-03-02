@@ -1,50 +1,173 @@
 <template name="domains">
   <div class="template-domains">
 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
     <div class="page-header">
       <h1>Domains</h1>
     </div>
 
-    <link rel="stylesheet" type="text/css" href="domain.css" media="all"/>
+    
 
-    <div id="domain">
-      <ul> 
-        <li><a href="#">Sorting</a></li> 
-          <ul> 
-            <li><a href="#">Level 1</a></li> 
-            <li><a href="#">Level 2</a></li> 
-            <li><a href="#">Level 3</a></li> 
-          </ul>
+    <div class="container">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collpaseone" data-toggle="collapse" data-parent="accordion">
+              Sorting</a>
+            </h4>
+          </div>
 
-        <li><a href="#">Data Structures</a></li> 
-          <ul> 
-            <li><a href="#">Level 1</a></li> 
-            <li><a href="#">Level 2</a></li> 
-            <li><a href="#">Level 3</a></li> 
-          </ul>
 
-        <li><a href="#">Dynamic Programing</a></li> 
-          <ul> 
-            <li><a href="#">Level 1</a></li> 
-            <li><a href="#">Level 2</a></li> 
-            <li><a href="#">Level 3</a></li> 
-          </ul> 
+          <div id="collpaseone" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <div class="cointainer2">
+                                <div class ="row">
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Sorting I
+                                            </a> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Sorting II
+                                            </a> 
+                                        </div>
+                                    </div>                        
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Sorting III
+                                            </a> 
+                                        </div>
+                                    </div>
 
-        <li><a href="#">Search</a></li> 
-          <ul> 
-            <li><a href="#">Quickshort</a></li> 
-            <li><a href="#">Insertion Sort</a></li> 
-            <li><a href="#">Bubble Sort</a></li> 
-          </ul> 
-      </ul> 
 
-    </div>
-      <!-- {{#each domains}}
-        {{#each topics}}
-            <li class="list-group-item">{{ description }} <span class="label label-default">{{ rating }}</span></li>
-        {{/each}}
-      {{/each}} -->
+                                </div>
+                            </div>
+            </div>
+          </div>
+        </div>
 
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collpasetwo" data-toggle="collapse" data-parent="accordion">
+                            Dynamic Programming</a>
+                        </h4>
+                    </div>
+                    <div id="collpasetwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="cointainer2">
+                                <div class ="row">
+                                                                        <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Dynamic Programming I
+                                            </a> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Dynamic Programming II
+                                            </a> 
+                                        </div>
+                                    </div>                        
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Dynamic Programming III
+                                            </a> 
+                                        </div>
+                                    </div>                          
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#collpasethree" data-toggle="collapse" data-parent="accordion">
+                            Search</a>
+                        </h4>
+                    </div>
+                    <div id="collpasethree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="cointainer2">
+                                <div class ="row">
+                                                                        <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Search I
+                                            </a> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Search II
+                                            </a> 
+                                        </div>
+                                    </div>                        
+                                    
+                                    <div class="col-md-4">
+                                        <div class="list-group list-group-flush"> 
+                                            <a href="#" class="list-group-item">
+                                                <span class="glyphicon glyphicon-chevron-right">
+                                                </span>
+                                                Search III
+                                            </a> 
+                                        </div>
+                                    </div>                          
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   </div>
 </template>
