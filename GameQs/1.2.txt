@@ -1,0 +1,26 @@
+/******************** Psuedo Code **************************/
+
+
+Input: "James Franco the 3rd"
+Output: 5
+Type: PsudeoCode
+
+Code:
+
+Function1(string word):
+
+total_count := 0
+for each s in word:
+~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~
+
+	vowels = ['a', 'e', 'i', 'o', 'u']
+	
+	if s is in vowels
+
+		total_count = total_count + 1
+
+
+~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~
+	endif
+endfor
+return total_count;

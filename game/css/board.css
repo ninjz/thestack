@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: grey;
+}
+
+
+
+#wrapper{
+    /*margin: 8px auto 6px;
+    position: relative;*/
+    magin: 0 auto;
+    text-align: center;
+}
+#board_area{
+    background-color: white;
+    /*border:1px solid black;*/
+    border-top: none;
+    /*float:left;*/
+    display:inline-block;
+}
+
+#block_area{
+    /*float: right;*/
+    display:inline-block;
+}
+
+
+.row {
+    height:50px;
+}
+
+.row .slot{
+    height:48px;
+    width:48px;
+    border:1px solid black;
+    float:left;
+
+}
+.row div{
+    height:48px;
+    width:48px;
+    border:1px solid blue;
+    float:left;
+
+}

@@ -4,3 +4,4 @@ Router.route('/', {
 
 Router.route('/dashboard');
 Router.route('/domains');
+Router.route('/challenge');

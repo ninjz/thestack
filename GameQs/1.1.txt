@@ -1,0 +1,23 @@
+/******************** Psuedo Code **************************/
+
+
+Input: [2, 3, 8, 99, 11, 5678, 167]
+Output: 5788
+Type: PsudeoCode
+
+Code:
+
+Function1(list l):
+
+total_sum := 0
+for items in list l:
+~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~
+
+	if l is divisible by 2 then
+
+		total_sum := total_sum + l
+
+~~~~~~~~~~~~~~~~~QUESTION~~~~~~~~~~~~
+	endif
+endfor
+return sum;
