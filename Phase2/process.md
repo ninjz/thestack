@@ -99,5 +99,5 @@ Other Tools
 The main tool we used outside of GitHub was Meteor. Meteor is an open source platform for building website and mobile app in pure JavaScript.
 
 Decision Making
-At first, we decided on Calvin as our scrum leader. He was in many ways our leader for the project - he organized the basis of our project and helped other team members on various aspects of the project. However, ltimately our scrum meetings were team-driven and we did not feel like we needed a leader to lead the meeting. We felt like it was the right decision to not have a specific scrum leader because we always had things to discuss without needing a leader to guide the conversation.
+At first, we decided on Calvin as our scrum leader. He was in many ways our leader for the project - he organized the basis of our project and helped other team members on various aspects of the project. However, ultimately our scrum meetings were team-driven and we did not feel like we needed a leader to lead the meeting. We felt like it was the right decision to not have a specific scrum leader because we always had things to discuss without needing a leader to guide the conversation.
 
