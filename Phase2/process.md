@@ -92,3 +92,12 @@ daily1: Mar 3 group chat
 daily2: Mar 4 group chat
 - fixing bugs
 
+GitHub Use
+Our work was mostly split into different teams within our group. The work was split so that there was generally not too much overlap. For the work within the group, a lot of the time, the smaller teams worked together in real life/on Skype and we did not have many synchronization issues. We used standard camelCase naming conventions and were descriptive in naming variables and functions.
+
+Other Tools
+The main tool we used outside of GitHub was Meteor, a web development software.
+
+Decision Making
+At first, we decided on Calvin as our scrum leader. He was in many ways our leader for the project - he organized the basis of our project and helped other team members on various aspects of the project. However, ltimately our scrum meetings were team-driven and we did not feel like we needed a leader to lead the meeting. We felt like it was the right decision to not have a specific scrum leader because we always had things to discuss without needing a leader to guide the conversation.
+
