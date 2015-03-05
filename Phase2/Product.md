@@ -7,4 +7,8 @@ What we built in Phase 2:
 * Login function
 * Register account function
 * Domain Page
-* Game: Basic prototype of one example problem
+* Game: Basic prototype of one example problem which includes
+        - Drag and drop method using the mouse
+        - Uses a grid board that provides better visualization for indentation
+        - Game pieces snap to board
+        - Dynamic code that allows for problems of any size to be used (not in use for our example)
