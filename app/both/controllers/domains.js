@@ -5,12 +5,12 @@ DomainsController = AppController.extend({
   // data: {
   //   domains: Domains.find({})
   // },
-  // onBeforeAction: function (pause) {
-  //   AccountsTemplates.ensureSignedIn.call(this, pause);
-  // },
-  // onAfterAction: function () {
-  //   Meta.setTitle('Domains');
-  // }
+  onBeforeAction: function (pause) {
+    AccountsTemplates.ensureSignedIn.call(this, pause);
+  },
+  onAfterAction: function () {
+    Meta.setTitle('Domains');
+  }
 });
 
 DashboardController.events({

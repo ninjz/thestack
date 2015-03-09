@@ -14,14 +14,15 @@
 
 #block_area{
     /*float: right;*/
+    border:1px solid black;
     display:inline-block;
 }
 .board_row {
-    height:38px;
+    height:28px;
 }
 
 .board_row .slot{
-    height:38px;
+    height:28px;
     width:38px;
     border:1px solid black;
     float:left;

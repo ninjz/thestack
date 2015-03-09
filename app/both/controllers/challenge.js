@@ -4,13 +4,13 @@ ChallengeController = AppController.extend({
   },
   data: {
     domains: Challenge.find()
+},
+  onBeforeAction: function (pause) {
+    AccountsTemplates.ensureSignedIn.call(this, pause);
+  },
+  onAfterAction: function () {
+    Meta.setTitle('Challenge');
   }
-  // onBeforeAction: function (pause) {
-  //   AccountsTemplates.ensureSignedIn.call(this, pause);
-  // },
-  // onAfterAction: function () {
-  //   Meta.setTitle('Domains');
-  // }
 });
 
 ChallengeController.events({
