@@ -50,7 +50,7 @@ Template.challenge.helpers({
 Template.challenge.rendered = function() {
 
     var gamestate = [];  // current gamestate
-    var num_rows;
+    var num_rows, exp_blocks;
 
     blocks = document.getElementsByClassName("block");
     frames = document.getElementsByClassName("slot");
@@ -100,6 +100,10 @@ Template.challenge.rendered = function() {
     function create_blocks(shuffled_code) {
         for (var i = 0; i < shuffled_code.length; i++){
 
+            // initialize game state
+            gamestate[i] = null;
+            exp_blocks = shuffled_code.length;
+
             // cheesy implementation, hackable by looking at source and looking at id number
             var count = 0;
             for (count = 0; count < code.length; count++) {
@@ -132,7 +136,7 @@ Template.challenge.rendered = function() {
     $('.run-btn').click(function(){
 
         // check game state to verify if correct or not.
-        var curr;
+        var curr, num = 0;
 
         for(var i = 1; i < gamestate.length; i++){
             curr = gamestate[i-1];
@@ -142,10 +146,11 @@ Template.challenge.rendered = function() {
                     return;
                 }
             }
+            num++; // keeps track of how many blocks are actually on the board
 
         }
-        $("#game_status_correct").show();
 
+        return (num == exp_blocks) ? $("#game_status_correct").show() : $("#game_status_incorrect").show();
     });
 
     $("#block_area").droppable({
