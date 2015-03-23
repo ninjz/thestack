@@ -1,10 +1,14 @@
 ChallengeController = AppController.extend({
+  layoutTemplate: 'appLayout',
+  template: 'challenge',
+
   waitOn: function() {
-    return this.subscribe('challenge');
+    return this.subscribe('challenge', this.params._id);
   },
-  data: {
-    domains: Challenge.find()
-},
+  data: function() {
+    return { challenge: Challenge.find({ _id: this.params._id }) }
+    // challenge : Challenge.find({ domain: 'Sorting'}),
+  },
   onBeforeAction: function (pause) {
     AccountsTemplates.ensureSignedIn.call(this, pause);
   },

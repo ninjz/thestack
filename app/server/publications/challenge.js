@@ -6,10 +6,11 @@ Meteor.publishComposite("challenge", function() {
     // ,
     // children: [
     //   {
-    //     find: function(item) {
-    //       return [];
+    //     find: function(challenge) {
+    //       return Challenge.find(challenge.id);
     //     }
     //   }
     // ]
+    
   }
 });

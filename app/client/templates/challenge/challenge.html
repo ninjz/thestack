@@ -1,10 +1,11 @@
 <template name="challenge">
+  {{#each challenge}}
   <div id="content" class="container">
       <div class="template-dashboard">
         <link rel="stylesheet" type="text/css" href="css/board.css" />
 
         <div class="page-header">
-          <h1>Insertion Sort - Part 1</h1>
+          <h1>{{title}}</h1>
 
           <div id="game_status_correct" class="alert alert-success alert-dismissible collapse" role="alert">
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -33,7 +34,7 @@
                     </p>
                 </div>
                 <div class="msB">
-                    {{{challenge.problem}}}
+                        {{{problem}}}
                 </div>
             </div>
         </div>
@@ -47,7 +48,8 @@
 
     </ul>
      -->
-    <div id="code" style="display:none">{{challenge.code}}</div>
+    <div id="code" style="display:none">{{code}}</div>
 
   </div>
+  {{/each}}
 </template>

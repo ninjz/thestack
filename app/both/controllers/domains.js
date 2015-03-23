@@ -1,10 +1,11 @@
 DomainsController = AppController.extend({
-  // waitOn: function() {
-  //   return this.subscribe('domains');
-  // },
-  // data: {
-  //   domains: Domains.find({})
-  // },
+  waitOn: function() {
+    return this.subscribe('challenge');
+  },
+  data: {
+    sorting: Challenge.find({ domain: 'Sorting'}),
+
+  },
   onBeforeAction: function (pause) {
     AccountsTemplates.ensureSignedIn.call(this, pause);
   },
