@@ -1,6 +1,6 @@
 Meteor.startup(function() {
 
-    if (Challenge.find({}).count() === 1) {
+    if (Challenge.find({}).count() === 3) {
 
         Challenge.insert({
             domain: 'Sorting',
@@ -51,6 +51,7 @@ Meteor.startup(function() {
             , "alist[position]=alist[position-1]", "position = position-1", "alist[position]=currentvalue", "alist = [54,26,93,17,77,31,44,55,20]", "insertionSort(alist)" , "print(alist)"],
             createdAt: new Date()
         });
+
 
     }
 });

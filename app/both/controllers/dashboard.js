@@ -1,6 +1,6 @@
 DashboardController = AppController.extend({
   waitOn: function() {
-    return this.subscribe('items');
+    return this.subscribe('items'); // change to challenge
   },
   data: {
     items: Items.find({})
