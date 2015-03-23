@@ -6,7 +6,8 @@ ChallengeController = AppController.extend({
     return this.subscribe('challenge', this.params._id);
   },
   data: function() {
-    return { challenge: Challenge.find({ _id: this.params._id }) }
+    return { challenge: Challenge.find({ _id: this.params._id}),
+             allChallenges: Challenge.find({}),}  
     // challenge : Challenge.find({ domain: 'Sorting'}),
   },
   onBeforeAction: function (pause) {
