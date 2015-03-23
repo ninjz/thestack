@@ -17,12 +17,13 @@ Meteor.startup(function() {
     problem: function() {return Fake.sentence(); },
     code: ["Function1(list l):", "total_sum := 0"
                 , "for items in list l:", "if l is divisible by 2 then"
-                , "total_sum := total_sum + l"],
-    answer: [1,2,3,4,5]
+                , "total_sum := total_sum + l"]
    });
 
-   _(1).times(function(n) {
-       Factory.create('challenge');
-   });
+   if(Challenge.find({}).count() === 0){
+       _(1).times(function(n) {
+           Factory.create('challenge');
+       });
+   }
 
 });
