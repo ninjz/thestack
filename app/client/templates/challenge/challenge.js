@@ -23,15 +23,9 @@ Template.challenge.rendered = function() {
 
     $('#code_area').children().each(function() {
         code.push($(this).text());
-        // console.log('HI');
     });
 
-
-
-    // var code = ["def insertionSort(alist):", "for index in range(1,len(alist)):", "currentvalue = alist[index]", "position = index", "while position>0 and alist[position-1]>currentvalue:"
-    // , "alist[position]=alist[position-1]", "position = position-1", "alist[position]=currentvalue", "alist = [54,26,93,17,77,31,44,55,20]", "insertionSort(alist)" , "print(alist)"]
-
-
+    console.log(code);
     var shuffled_code = shuffleCodeLines(code);
 
 
@@ -119,7 +113,7 @@ Template.challenge.rendered = function() {
                     return;
                 }
             }
-            num++; // keeps track of how many blocks are actually on the board
+            if(curr || ( (i == gamestate.length - 1) && (gamestate[i]) )) num++; // keeps track of how many blocks are actually on the board
 
         }
 
@@ -130,7 +124,7 @@ Template.challenge.rendered = function() {
         drop: function(event,ui){
             var row = $(ui.draggable).data('currentRow');
             if(row != null){
-                console.log(row);
+                // console.log(row);
                 $("#"+row+".board_row").children().droppable("option", "disabled", false);
 
                 $(ui.draggable).data('currentRow', null);
@@ -156,7 +150,7 @@ Template.challenge.rendered = function() {
                 // re-enable previous row, if moving from another row
                 var row = $(ui.draggable).data('currentRow');
                 if(row != null){
-                    console.log(row);
+                    // console.log(row);
                     $("#"+row+".board_row").children().droppable("option", "disabled", false).addClass("active");
 
                     // delete row from game state
