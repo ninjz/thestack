@@ -116,6 +116,7 @@ Template.challenge.rendered = function() {
             if(curr || ( (i == gamestate.length - 1) && (gamestate[i]) )) num++; // keeps track of how many blocks are actually on the board
 
         }
+        console.log('num: '+num+'exp: '+exp_blocks);
 
         return (num == exp_blocks) ? $("#game_status_correct").show() : $("#game_status_incorrect").show();
     });
