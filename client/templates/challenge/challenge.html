@@ -1,0 +1,117 @@
+<template name="challenge">
+
+    <!-- <div class="row"> -->
+      <div id="content" class="col-sm-4 col-md-3 sidebar">
+    <div class="mini-submenu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="list-group">
+      <span href="#" class="list-group-item active">
+          Submenu
+          <span class="pull-right" id="slide-submenu">
+              <i class="fa fa-times"></i>
+          </span>
+      </span>
+      {{#each allChallenges}}
+      <a href="#" class="list-group-item">
+          <i class="fa fa-comment-o"></i> {{title}}
+      </a>
+      {{/each}}
+      <!-- <a href="#" class="list-group-item">
+          <i class="fa fa-search"></i> Lorem ipsum
+      </a>
+      <a href="#" class="list-group-item">
+          <i class="fa fa-user"></i> Lorem ipsum
+      </a>
+      <a href="#" class="list-group-item">
+          <i class="fa fa-folder-open-o"></i> Lorem ipsum <span class="badge">14</span>
+      </a>
+      <a href="#" class="list-group-item">
+          <i class="fa fa-bar-chart-o"></i> Lorem ipsumr <span class="badge">14</span>
+      </a>
+      <a href="#" class="list-group-item">
+          <i class="fa fa-envelope"></i> Lorem ipsum
+      </a> -->
+    </div>
+    </div>
+    <!-- </div> -->
+
+  {{#each challenge}}
+  <div id="content" class="container col-md-6 col-sm-4">
+
+
+      <div class="template-dashboard">
+        <link rel="stylesheet" type="text/css" href="css/board.css" />
+
+        <div class="page-header">
+          <h1>{{title}}</h1>
+
+          <div id="game_status_correct" class="alert alert-success alert-dismissible collapse" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>Good Job!</strong> You're doing great keep working on more challenges
+          </div>
+
+          <div id="game_status_incorrect" class="alert alert-danger alert-dismissible collapse" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <strong>Incorrect!</strong> Wow you really suck!
+          </div>
+
+          <div id="wrap">
+          		<div id="board_area"></div>
+
+          		<div id="block_area"></div>
+
+          </div>
+          <a class="run-btn btn btn-primary navbar-btn">Run code!</a>
+        </div>
+
+        <div>
+            <div class ="span-md-11">
+                <div class="msB">
+                    <p>
+                        <strong>Problem Statement</strong>
+                    </p>
+                </div>
+                <div class="msB">
+                        {{{problem}}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- <ul class="list-group">
+        <li class="list-group-item">{{ challenge.problem }} <span class="label label-default">{{ rating }}</span></li>
+
+    </ul>
+-->
+    <div id="code_area">
+     {{#each getArray}}
+        <div id="code" style="display:none">{{{value}}}</div>
+     {{/each}}
+    </div>
+
+  </div>
+  {{/each}}
+  <script>
+      $(function(){
+
+      $('#slide-submenu').on('click',function() {
+          $(this).closest('.list-group').fadeOut('slide',function(){
+              $('.mini-submenu').fadeIn();
+          });
+
+        });
+
+      $('.mini-submenu').on('click',function(){
+          $(this).next('.list-group').toggle('slide');
+          $('.mini-submenu').hide();
+      })
+    })
+  </script>
+
+</template>
